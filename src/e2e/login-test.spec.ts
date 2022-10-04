@@ -15,3 +15,15 @@ test('Log in on standard user test', async ({ page }) => {
     await expect.soft(page).toHaveURL('/inventory.html')
     await expect(page.locator('.app_logo')).toBeVisible()
 })
+
+test('Log in on locked user test', async ({ page }) => {
+    const loginPage = new LogInPage(page)
+
+    await loginPage.enterUsername('locked_out_user')
+    await loginPage.enterPassword('secret_sauce')
+    await loginPage.clickLogIn()
+
+    await expect(page.locator('[data-test="error"]')).toHaveText(
+        'Epic sadface: Sorry, this user has been locked out.'
+    )
+})
