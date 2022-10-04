@@ -1,32 +1,38 @@
 {
-  "name": "playwrightrepo",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@playwright/test": "^1.26.1",
-    "allure-playwright": "^2.0.0-beta.19",
-    "typescript": "^4.8.4"
-  },
-  "scripts": {
-    "test": "npx playwright test",
-    "test:e2e": "npx playwright test e2e",
-    "test:debug": "npx playwright test --debug"
-  },
-  "dependencies": {
-    "allure": "^0.0.0",
-    "playwright-core": "^1.26.1",
-    "ts-node-dev": "^2.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kmlynski/e2eframework.git"
-  },
-  "keywords": [],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/kmlynski/e2eframework/issues"
-  },
-  "homepage": "https://github.com/kmlynski/e2eframework#readme",
-  "description": ""
+    "name": "playwrightrepo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@playwright/test": "^1.26.1",
+        "allure-playwright": "^2.0.0-beta.19",
+        "typescript": "^4.8.4"
+    },
+    "scripts": {
+        "test": "npx playwright test",
+        "test:e2e": "npx playwright test e2e",
+        "test:debug": "npx playwright test --debug",
+        "test:report": "npx playwright test --reporter allure-playwright && allure serve"
+    },
+    "dependencies": {
+        "@tsconfig/recommended": "^1.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.1.0",
+        "@typescript-eslint/parser": "^5.1.0",
+        "allure": "^0.0.0",
+        "eslint": "^8.14.0",
+        "playwright-core": "^1.26.1",
+        "prettier": "^2.6.2",
+        "ts-node-dev": "^2.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kmlynski/e2eframework.git"
+    },
+    "keywords": [],
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/kmlynski/e2eframework/issues"
+    },
+    "homepage": "https://github.com/kmlynski/e2eframework#readme",
+    "description": ""
 }
