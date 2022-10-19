@@ -10,6 +10,7 @@
     },
     "scripts": {
         "test": "npx playwright test",
+        "test:api": "npx playwright test api",
         "test:e2e": "npx playwright test e2e",
         "test:debug": "npx playwright test --debug",
         "test:report": "npx playwright test --reporter allure-playwright && allure serve"
