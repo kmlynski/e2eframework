@@ -41,7 +41,7 @@ const config: PlaywrightTestConfig = {
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on',
         screenshot: 'only-on-failure',
-        video: 'retain-on-failure'
+        video: 'retain-on-failure',
 
         baseURL: 'https://www.saucedemo.com',
     },
